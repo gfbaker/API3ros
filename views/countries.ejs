@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="EI=edge">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <title>Countries</title>
+    </head>
+    <body>
+        <h2>Vacaciones en Chile</h2>  
+        <select>
+            <% holidays.forEach(holiday => { %>
+                <option>
+                    <%= holiday.title %>
+                </option>
+            <% }) %>
+        </select>
+        <h2>Listado de Paises</h2>  
+          <select>
+            <% countries.forEach(country => { %>
+                <option>
+                    <%= country.name.common %>
+                </option>
+            <% }) %>
+          </select>
+    </body>
+</html>
